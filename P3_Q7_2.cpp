@@ -4,10 +4,10 @@
 
 using namespace std;
 
-bool isEvenSquare(int num) {
-    if (num < 0 || num % 2 != 0) return false;
+bool isEvenSquare(int num){
+    if (num<0||num%2!=0)return false;
     int root = sqrt(num);
-    return (root * root == num);
+    return(root * root == num);
      } 
 
 int main() {
@@ -15,9 +15,9 @@ int main() {
     ofstream outFile("output.txt");
     int num;
 
-    while (inFile >> num) {
-        if (isEvenSquare(num)) {
-            outFile << num << endl;
+    while (inFile>>num) {
+        if (isEvenSquare(num)){
+            outFile<<num<<endl;
         }
        }
 
