@@ -3,11 +3,11 @@
 
 using namespace std;
 
-bool isPerfect(int num) {
-    if (num <= 0) return false;
-    int sum = 0;
-    for (int i = 1; i < num; i++) {
-        if (num % i == 0) {
+bool isPerfect(int num){
+    if (num<=0) return false;
+    int sum=0;
+    for (int i=1;i<num;i++){
+        if (num%i == 0){
           sum += i;
         }
     }
@@ -19,9 +19,9 @@ int main() {
     ofstream outFile("output.txt");
     int num;
 
-    while (inFile >> num) {
-        if (isPerfect(num)) {
-          outFile << num << endl;
+    while (inFile >> num){
+        if (isPerfect(num)){
+          outFile<<num<<endl;
         }
        }
 
